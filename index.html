@@ -5,7 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/initiation.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fontAwesome/all.css" />
   </head>
   <body>
     <div class="inicioContainer">
@@ -16,14 +18,201 @@
         <div class="texto">INICIAR</div>
       </button>
     </div>
+
     <canvas id="bg"></canvas>
 
+    <div class="background"></div>
+
     <div class="portafolio">
-      <div class="sobreMi"></div>
-      <img src="media/fotoCV.jpg" alt="" srcset="" />
+      <div class="aboutMe">
+        <h2 class="title">About Me</h2>
+        <img src="media/fotoCV.jpg" alt="" srcset="" />
+        <p>
+          Hi! My name is Sebastian, I am a programmer with knowledge of both
+          front-end as well as back-end, altrough I personally preffer working
+          with the front-end of things. <br />I like to work with teams to gain
+          experience and grow my skills into a greater level.
+        </p>
+      </div>
+
+      <div class="knowledge">
+        <h2 class="title">Knowledge</h2>
+        <h3 class="miniTitle">
+          As I mentioned before, my main skills fall into the front-end side,
+          and so these are the tools that I work with
+        </h3>
+
+        <div class="tools">
+          <div class="html">
+            <h4 class="overTitle">HTML5</h4>
+            <img src="media/tools/HTML5.png" alt="HTML5" />
+          </div>
+
+          <div class="css">
+            <h4 class="overTitle">CSS</h4>
+            <img src="media/tools/css.png" alt="CSS" />
+          </div>
+
+          <div class="JSCript">
+            <h4 class="overTitle">JavaScript</h4>
+            <img src="media/tools/JScript.png" alt="JavaScript" />
+          </div>
+
+          <div class="bootstrap">
+            <h4 class="overTitle">Bootstrap</h4>
+            <img src="media/tools/Bootstrap.png" alt="Bootstrap" />
+          </div>
+
+          <div class="react">
+            <h4 class="overTitle">React</h4>
+            <img src="media/tools/react.png" alt="React" />
+          </div>
+        </div>
+
+        <div class="coursesDiv">
+          <h5 class="subtitle">Courses</h5>
+          <h3 class="miniTitle">I have completed these courses</h3>
+          <div class="contenedorFlex">
+            <div class="contenedorFlexItem">
+              <h4 class="overTitle">Ultimate Web</h4>
+              <img src="media/cursos/ulimate_web.jpg" alt="UltimateWeb" />
+            </div>
+
+            <div class="contenedorFlexItem">
+              <h4 class="overTitle">React: de Cero a Experto</h4>
+              <img
+                src="media/cursos/react_cero_experto.jpg"
+                alt="react_cero_experto"
+              />
+            </div>
+
+            <div class="contenedorFlexItem">
+              <h4 class="overTitle">Aprende JS, HTML, CSS</h4>
+              <img
+                src="media/cursos/aprende_js_html_css.jpg"
+                alt="aprende_js_html_css"
+              />
+            </div>
+          </div>
+
+          <p>
+            I also finished "Jovenes a Programar", an Uruguayan powered program
+            that encourages country's youngsters to learn programming.
+          </p>
+        </div>
+      </div>
+
+      <div class="proyects">
+        <h2 class="title">Proyects</h2>
+        <h3 class="miniTitle">I am the author of these proyects:</h3>
+
+        <div class="contenedorFlex">
+          <div class="contenedorFlexItem">
+            <h4 class="overTitle">PokeWordle</h4>
+            <img src="media/Proyectos/PokeWordle.jpg" alt="PokeWordle" />
+          </div>
+
+          <div class="contenedorFlexItem">
+            <h4 class="overTitle">Password Generator</h4>
+            <img
+              src="media/Proyectos/GeneradorPassword.jpg"
+              alt="PasswordGenerator"
+            />
+          </div>
+
+          <div class="contenedorFlexItem">
+            <h4 class="overTitle">Gallery</h4>
+            <img src="media/Proyectos/Galeria.jpg" alt="Gallery" />
+          </div>
+
+          <div class="contenedorFlexItem">
+            <h4 class="overTitle">Simple Weather App</h4>
+            <img src="media/Proyectos/Clima.jpg" alt="WeatherApp" />
+          </div>
+
+          <div class="contenedorFlexItem">
+            <h4 class="overTitle">ToDo App</h4>
+            <img src="media/Proyectos/ToDoApp.jpg" alt="ToDoApp" />
+          </div>
+        </div>
+      </div>
+
+      <div class="languages">
+        <h2 class="title">Languages</h2>
+        <div class="languageDiv">
+          <h4 class="overTitle">Spanish</h4>
+          <p>
+            I have full control of the Spanish language, since it's my native
+            language.
+          </p>
+        </div>
+
+        <div class="languageDiv">
+          <h4 class="overTitle">English</h4>
+          <p>
+            I am fluent in English, I have an advanced level (C1), I know how to
+            read, write, listen flawlessly and I can mantain conversations with
+            other people in English.
+          </p>
+        </div>
+      </div>
+
+      <div class="contactMe">
+        <h2 class="title">Contact Me</h2>
+        <div class="contactMethods">
+          <div class="contactDiv">
+            <h4 class="overTitle">Whatsapp</h4>
+            <a target="_blank" href="https://wa.me/message/VUGV3ZGKPTZTO1"
+              ><i class="fa-brands fa-whatsapp iMedio"></i
+            ></a>
+          </div>
+
+          <div class="contactDiv">
+            <h4 class="overTitle">Phone</h4>
+            <a href="tel:+59892302595"
+              ><i class="fa-solid fa-phone iMedio"></i
+            ></a>
+          </div>
+
+          <div class="contactDiv">
+            <h4 class="overTitle">Mail</h4>
+            <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"
+              ><i class="fa-solid fa-envelope iMedio"></i
+            ></a>
+          </div>
+
+          <div class="contactDiv">
+            <h4 class="overTitle">Linkedin</h4>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"
+              ><i class="fa-brands fa-linkedin-in iMedio"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer>
+      <a target="_blank" href="https://github.com/Shivu-a?tab=repositories"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+      <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"
+        ><i class="fa-solid fa-envelope"></i
+      ></a>
+      <a href="tel:+59892302595"><i class="fa-solid fa-phone"></i></a>
+      <a target="_blank" href="https://wa.me/message/VUGV3ZGKPTZTO1"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </footer>
 
     <!-- <script type="module" src="/main.js"></script> -->
     <script src="iniciar.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>

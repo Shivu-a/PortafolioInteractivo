@@ -1,9 +1,3 @@
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 html {
   overflow: hidden;
 }
@@ -17,13 +11,10 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background-color: #8f7979;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .inicioContainer {
+  position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,13 +22,6 @@ body {
   align-items: center;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.8);
-}
-/* No Tocar */
-
-img {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
 }
 
 .container {

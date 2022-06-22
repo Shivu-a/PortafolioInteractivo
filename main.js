@@ -1,4 +1,3 @@
-// Importar librerias
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
@@ -73,19 +72,6 @@ piso.position.z = 0;
 piso.rotation.x = 1.57;
 
 escena.add(piso);
-
-//modelo
-const loader = new GLTFLoader();
-loader.load(
-  "modelo/scene.gltf",
-  (gltf) => {
-    escena.add(gltf.scene);
-  },
-  undefined,
-  (error) => {
-    console.log(error);
-  }
-);
 
 // luz
 const luz = new THREE.DirectionalLight(0xffffff);
