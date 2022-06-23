@@ -9,6 +9,6 @@ boton.addEventListener("click", () => {
   inicioContainer.className += " desaparecer";
   setTimeout(() => {
     inicioContainer.parentElement.removeChild(inicioContainer);
-    html.style.overflow = "auto";
+    // html.style.overflow = "auto";
   }, 1250);
 });

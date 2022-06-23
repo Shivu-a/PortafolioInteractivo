@@ -103,7 +103,7 @@ function conectarPuntos() {
       let distancia = da * da + dk * dk;
       if (distancia < (canvas.width / 7) * (canvas.height / 7)) {
         opacidad = 1 - distancia / 20000;
-        ctx.strokeStyle = `rgba(255,255,255, ${opacidad})`;
+        ctx.strokeStyle = `rgba(176, 40, 94, ${opacidad})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(arrayParticulas[i].x, arrayParticulas[i].y);
