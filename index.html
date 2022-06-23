@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/fontAwesome/all.css" />
   </head>
   <body>
+    <!-- Inicio -->
     <div class="inicioContainer">
       <div class="container">
         <div class="contenedorBoton">ㅤ</div>
@@ -19,79 +20,106 @@
       </button>
     </div>
 
-    <canvas id="bg"></canvas>
+    <!-- Canvas -->
+    <canvas id="canvas1"></canvas>
 
-    <div class="background"></div>
-
+    <!-- Portafolio -->
     <div class="portafolio">
+      <!-- About Me -->
       <div class="aboutMe">
         <h2 class="title">About Me</h2>
-        <img src="media/fotoCV.jpg" alt="" srcset="" />
-        <p>
-          Hi! My name is Sebastian, I am a programmer with knowledge of both
-          front-end as well as back-end, altrough I personally preffer working
-          with the front-end of things. <br />I like to work with teams to gain
-          experience and grow my skills into a greater level.
-        </p>
+        <div class="innerAboutMe">
+          <div class="containerImagen">
+            <img src="media/fotoCV.jpg" alt="FotoCV" srcset="" />
+          </div>
+          <p>
+            Hi! My name is Sebastian, I am a programmer with knowledge of both
+            front-end as well as back-end, altrough I personally preffer working
+            with the front-end of things. <br />I like to work with teams to
+            gain experience and grow my skills into a greater level.
+          </p>
+        </div>
       </div>
 
       <div class="knowledge">
         <h2 class="title">Knowledge</h2>
-        <h3 class="miniTitle">
-          As I mentioned before, my main skills fall into the front-end side,
-          and so these are the tools that I work with
-        </h3>
+        <div class="wave"></div>
+        <div class="innerKnowledge">
+          <h3 class="miniTitle">
+            As I've mentioned before, my main skills fall into the front-end
+            side, and so these are the tools that I work with
+          </h3>
 
-        <div class="tools">
-          <div class="html">
-            <h4 class="overTitle">HTML5</h4>
-            <img src="media/tools/HTML5.png" alt="HTML5" />
-          </div>
+          <div class="tools">
+            <div class="html">
+              <h4 class="overTitle">HTML5</h4>
+              <img src="media/tools/HTML5.png" alt="HTML5" />
+            </div>
 
-          <div class="css">
-            <h4 class="overTitle">CSS</h4>
-            <img src="media/tools/css.png" alt="CSS" />
-          </div>
+            <div class="css">
+              <h4 class="overTitle">CSS</h4>
+              <img src="media/tools/css.png" alt="CSS" />
+            </div>
 
-          <div class="JSCript">
-            <h4 class="overTitle">JavaScript</h4>
-            <img src="media/tools/JScript.png" alt="JavaScript" />
-          </div>
+            <div class="JSCript">
+              <h4 class="overTitle">JavaScript</h4>
+              <img src="media/tools/JScript.png" alt="JavaScript" />
+            </div>
 
-          <div class="bootstrap">
-            <h4 class="overTitle">Bootstrap</h4>
-            <img src="media/tools/Bootstrap.png" alt="Bootstrap" />
-          </div>
+            <div class="bootstrap">
+              <h4 class="overTitle">Bootstrap</h4>
+              <img src="media/tools/Bootstrap.png" alt="Bootstrap" />
+            </div>
 
-          <div class="react">
-            <h4 class="overTitle">React</h4>
-            <img src="media/tools/react.png" alt="React" />
+            <div class="react">
+              <h4 class="overTitle">React</h4>
+              <img src="media/tools/react.png" alt="React" />
+            </div>
           </div>
         </div>
 
+        <!-- Courses -->
         <div class="coursesDiv">
           <h5 class="subtitle">Courses</h5>
           <h3 class="miniTitle">I have completed these courses</h3>
           <div class="contenedorFlex">
             <div class="contenedorFlexItem">
-              <h4 class="overTitle">Ultimate Web</h4>
-              <img src="media/cursos/ulimate_web.jpg" alt="UltimateWeb" />
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-titulo="Ultimate Web"
+                ><img
+                  src="media/cursos/ulimate_web.jpg"
+                  alt="UltimateWeb"
+                  data-titulo="Ultimate Web"
+              /></a>
             </div>
 
             <div class="contenedorFlexItem">
-              <h4 class="overTitle">React: de Cero a Experto</h4>
-              <img
-                src="media/cursos/react_cero_experto.jpg"
-                alt="react_cero_experto"
-              />
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-titulo="React: de cero a experto"
+              >
+                <img
+                  src="media/cursos/react_cero_experto.jpg"
+                  alt="react_cero_experto"
+                />
+              </a>
             </div>
 
             <div class="contenedorFlexItem">
-              <h4 class="overTitle">Aprende JS, HTML, CSS</h4>
-              <img
-                src="media/cursos/aprende_js_html_css.jpg"
-                alt="aprende_js_html_css"
-              />
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-titulo="Aprende JS, HTML, CSS"
+                ><img
+                  src="media/cursos/aprende_js_html_css.jpg"
+                  alt="aprende_js_html_css"
+              /></a>
             </div>
           </div>
 
@@ -102,37 +130,63 @@
         </div>
       </div>
 
+      <!-- Projects -->
+
       <div class="proyects">
         <h2 class="title">Proyects</h2>
         <h3 class="miniTitle">I am the author of these proyects:</h3>
 
         <div class="contenedorFlex">
           <div class="contenedorFlexItem">
-            <h4 class="overTitle">PokeWordle</h4>
-            <img src="media/Proyectos/PokeWordle.jpg" alt="PokeWordle" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-titulo="PokeWordle"
+              ><img src="media/Proyectos/PokeWordle.jpg" alt="PokeWordle"
+            /></a>
           </div>
 
           <div class="contenedorFlexItem">
-            <h4 class="overTitle">Password Generator</h4>
-            <img
-              src="media/Proyectos/GeneradorPassword.jpg"
-              alt="PasswordGenerator"
-            />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-titulo="Password Generator"
+              ><img
+                src="media/Proyectos/GeneradorPassword.jpg"
+                alt="PasswordGenerator"
+            /></a>
           </div>
 
           <div class="contenedorFlexItem">
-            <h4 class="overTitle">Gallery</h4>
-            <img src="media/Proyectos/Galeria.jpg" alt="Gallery" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-titulo="Gallery"
+              ><img src="media/Proyectos/Galeria.jpg" alt="Gallery"
+            /></a>
           </div>
 
           <div class="contenedorFlexItem">
-            <h4 class="overTitle">Simple Weather App</h4>
-            <img src="media/Proyectos/Clima.jpg" alt="WeatherApp" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-titulo="Simple Weather App"
+              ><img src="media/Proyectos/Clima.jpg" alt="WeatherApp"
+            /></a>
           </div>
 
           <div class="contenedorFlexItem">
-            <h4 class="overTitle">ToDo App</h4>
-            <img src="media/Proyectos/ToDoApp.jpg" alt="ToDoApp" />
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-titulo="To Do App"
+              ><img src="media/Proyectos/ToDoApp.jpg" alt="ToDoApp"
+            /></a>
           </div>
         </div>
       </div>
@@ -193,6 +247,7 @@
       </div>
     </div>
 
+    <div class="layeredWave"></div>
     <footer>
       <a target="_blank" href="https://github.com/Shivu-a?tab=repositories"
         ><i class="fa-brands fa-github"></i
