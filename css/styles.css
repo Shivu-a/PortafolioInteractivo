@@ -90,6 +90,7 @@ canvas {
   z-index: -1;
   background-color: #1e1e1e;
 }
+
 /* Styling */
 
 section {
@@ -132,6 +133,7 @@ section {
 
 .imgAboutMe img {
   height: 80%;
+  max-width: 100%;
   border-bottom-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
 }
@@ -490,8 +492,137 @@ footer a:hover {
   background-color: rgba(100, 100, 100, 0.5);
 }
 
-@media screen and (max-width: 580px) {
-  footer {
-    flex-wrap: wrap;
+@media screen and (max-width: 1024px) {
+  html {
+    overflow: auto;
+  }
+
+  * {
+    flex-direction: column;
+  }
+
+  nav {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  nav:hover {
+    all: unset;
+  }
+
+  nav a::after {
+    all: unset;
+  }
+
+  nav a:hover {
+    all: unset;
+  }
+
+  nav:hover a::after {
+    all: unset;
+  }
+
+  section {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 0 2rem 0;
+  }
+
+  .title {
+    flex-direction: row;
+    font-size: 2.5rem;
+  }
+
+  .imgAboutMe {
+    width: 100%;
+  }
+
+  .textAboutMe {
+    width: 100%;
+  }
+
+  .textAboutMe p {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .mySkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textMySkills {
+    width: 100%;
+  }
+
+  .skills {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .tools {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .tools img {
+    width: 80%;
+    height: auto;
+  }
+
+  .abilities h4 {
+    padding: 0rem;
+  }
+
+  .textLanguages {
+    padding: 1.5rem 0rem;
+  }
+
+  .languagesDiv {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .languageInnerDiv {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .textContactMe {
+    width: 100%;
+  }
+
+  .iconsContactMe {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contactMeForm {
+    width: 100%;
+    padding-bottom: 15vh;
+  }
+  .contactMeForm form {
+    margin-top: 2rem;
+  }
+
+  .contactMeForm form h3 {
+    width: 85%;
+  }
+  .contactMeForm form input {
+    width: 85%;
+  }
+
+  .contactMeForm form textarea {
+    width: 85%;
   }
 }
