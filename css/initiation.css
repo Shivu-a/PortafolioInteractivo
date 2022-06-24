@@ -6,6 +6,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana;
 }
 
 body {
@@ -21,7 +22,8 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
 }
 
 .container {
@@ -68,6 +70,9 @@ body {
 
 .animatedButton {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   aspect-ratio: 1/1;
   border: 2px solid gold;
   font-size: 2rem;
@@ -147,6 +152,6 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(100vh);
+    transform: scale(2.5);
   }
 }

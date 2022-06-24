@@ -11,7 +11,6 @@
   box-sizing: border-box;
   color: var(--secondary-color);
   scroll-behavior: smooth;
-  /* background-color: rgba(0, 250, 100, 0.5); */
 }
 
 ::-webkit-scrollbar {
@@ -36,12 +35,7 @@ nav {
   align-items: center;
   width: 5vw;
   background-color: var(--bg-color);
-  transition: all var(--transition-speed) ease-in-out;
-  z-index: 15;
-}
-
-nav:hover {
-  width: 15vw;
+  z-index: 4;
 }
 
 nav a {
@@ -53,31 +47,44 @@ nav a {
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
-  transition: all var(--transition-speed) ease-in-out;
 }
 
-nav a::after {
-  content: attr(data-goTo);
-  position: absolute;
-  display: none;
-  opacity: 0;
-  bottom: 10%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  transition: all var(--transition-speed) ease-in-out;
-  animation: navAfterAnimation var(--transition-speed) ease-in-out;
-}
+@media screen and (min-width: 1024px) {
+  nav {
+    transition: all var(--transition-speed) ease-in-out;
+  }
 
-nav a:hover {
-  text-decoration: none;
-  color: var(--secondary-color);
-  background-color: var(--auxiliar-color);
-}
+  nav:hover {
+    width: 15vw;
+  }
 
-nav:hover a::after {
-  opacity: 1;
-  display: block;
+  nav a {
+    transition: all var(--transition-speed) ease-in-out;
+  }
+
+  nav a::after {
+    content: attr(data-goTo);
+    position: absolute;
+    display: none;
+    opacity: 0;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all var(--transition-speed) ease-in-out;
+    animation: navAfterAnimation var(--transition-speed) ease-in-out;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--auxiliar-color);
+  }
+
+  nav:hover a::after {
+    opacity: 1;
+    display: block;
+  }
 }
 
 @keyframes navAfterAnimation {
@@ -141,7 +148,8 @@ section {
   align-items: center;
   width: 40%;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
 }
 
 .imgAboutMe img {
@@ -186,6 +194,7 @@ section {
   flex-direction: column;
   width: 50%;
   height: 100vh;
+  border-left: 1px solid var(--secondary-color);
 }
 
 .tools {
@@ -217,7 +226,8 @@ section {
   align-items: center;
   height: 50%;
   padding: 1rem;
-  background-color: var(--bg-color);
+  background-color: rgba(45, 45, 45, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .abilities h4 {
@@ -261,14 +271,17 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
   background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(5px);
   width: 50%;
 }
 
 .proyectLink {
   position: relative;
   height: min-content;
-  width: 50%;
+  width: 40%;
   aspect-ratio: 16/8;
   border: 1px solid var(--secondary-color);
   overflow: hidden;
@@ -505,7 +518,7 @@ footer a:hover {
   background-color: rgba(100, 100, 100, 0.5);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   html {
     overflow: auto;
   }
@@ -523,15 +536,7 @@ footer a:hover {
     width: 100vw;
   }
 
-  nav:hover {
-    all: unset;
-  }
-
   nav a::after {
-    all: unset;
-  }
-
-  nav a:hover {
     all: unset;
   }
 
@@ -600,15 +605,45 @@ footer a:hover {
     padding: 1.5rem 0rem;
   }
 
+  .textProyects {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .proyectsInnerDiv {
+    background: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: blur(5px);
+  }
+
+  .proyectsInnerDiv .proyectLink {
+    width: 90%;
+  }
+
+  .proyectsInnerDiv .proyectLink a::after {
+    opacity: 1;
+    transform: unset;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+
   .languagesDiv {
     width: 100%;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .languageInnerDiv {
-    width: 100%;
+    width: 95%;
     margin: 0;
     padding: 1rem;
+  }
+
+  .languageInnerDiv p {
+    padding: 0.5rem;
   }
 
   .textContactMe {
