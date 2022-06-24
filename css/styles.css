@@ -66,6 +66,7 @@ nav a::after {
   width: 100%;
   text-align: center;
   transition: all var(--transition-speed) ease-in-out;
+  animation: navAfterAnimation var(--transition-speed) ease-in-out;
 }
 
 nav a:hover {
@@ -75,8 +76,20 @@ nav a:hover {
 }
 
 nav:hover a::after {
-  display: block;
   opacity: 1;
+  display: block;
+}
+
+@keyframes navAfterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 /* Canvas */
